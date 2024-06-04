@@ -7,4 +7,5 @@ function fibonacciNumber() {
 		n1 = n2; // change initial number
 		n2 = show;
 	}
+	console.log();
 }
