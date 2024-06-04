@@ -22,3 +22,6 @@ example
 ```
 
 To open web app visit [here](https://github.com/)
+
+### Version Control: 2.0.0
+Date: 2024, July 04, Tuesday, 16:31
