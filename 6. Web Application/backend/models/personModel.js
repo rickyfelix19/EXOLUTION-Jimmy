@@ -2,11 +2,7 @@ import mongoose from "mongoose";
 
 const personSchema = mongoose.Schema(
 	{
-		firstName: {
-			type: String,
-			required: true,
-		},
-		lastName: {
+		fullName: {
 			type: String,
 			required: true,
 		},
@@ -14,6 +10,18 @@ const personSchema = mongoose.Schema(
 			type: Number,
 			required: true,
 		},
+		email: {
+			type: String,
+			required: true,
+		},
+		account: {
+			type: Number,
+			required: true,
+		},
+		password: {
+			type: String,
+		},
+		history: [], // ref ID instead of data
 	},
 	{
 		timestamps: true,

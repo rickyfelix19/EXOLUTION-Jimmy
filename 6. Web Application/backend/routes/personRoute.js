@@ -6,15 +6,21 @@ const router = express.Router();
 // save a new person name
 router.post("/", async (req, res) => {
 	try {
-		if (!req.body.firstName || !req.body.lastName || !req.body.balance) {
+		if (
+			!req.body.fullName ||
+			!req.body.email ||
+			!req.body.balance ||
+			!req.body.account
+		) {
 			return res.status(400).send({
-				message: "Send all required fields: firstName, lastName, balance",
+				message: "Send all required fields: fullName, email, balance, account",
 			});
 		}
 		const newPerson = {
-			firstName: req.body.firstName,
-			lastName: req.body.lastName,
+			fullName: req.body.fullName,
+			email: req.body.email,
 			balance: req.body.balance,
+			account: req.body.account,
 		};
 
 		const person = await Person.create(newPerson);
@@ -54,9 +60,14 @@ router.get("/:id", async (req, res) => {
 // update person
 router.put("/:id", async (req, res) => {
 	try {
-		if (!req.body.firstName || !req.body.lastName || !req.body.balance) {
+		if (
+			!req.body.fullName ||
+			!req.body.email ||
+			!req.body.balance ||
+			!req.body.account
+		) {
 			return res.status(400).send({
-				message: "Send all required fields: firstName, lastName, balance",
+				message: "Send all required fields: fullName, email, balance, account",
 			});
 		}
 		const { id } = req.params;
