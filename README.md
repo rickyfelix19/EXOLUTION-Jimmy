@@ -28,9 +28,12 @@ To run do this
 
 npm run dev
 
-To open web app visit [here](https://github.com/)
+```
 
 ### Version Control: 2.1.0
 
 Date: 2024, July 09, Sunday, 15:21
+
+```
+
 ```
