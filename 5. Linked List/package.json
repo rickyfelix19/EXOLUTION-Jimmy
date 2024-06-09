@@ -1,11 +1,13 @@
 {
-  "name": "5.-linked-list",
-  "version": "1.0.0",
-  "description": "5. Code to create a linked list structure that can hold id number and a string payload,\r    it need methods for appending an element, removing also modify the content of the element. (use OOP).",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+	"name": "5.-linked-list",
+	"version": "1.0.0",
+	"description": "5. Code to create a linked list structure that can hold id number and a string payload,\r    it need methods for appending an element, removing also modify the content of the element. (use OOP).",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node index.js",
+		"dev": "nodemon index.js"
+	},
+	"author": "",
+	"license": "ISC"
 }

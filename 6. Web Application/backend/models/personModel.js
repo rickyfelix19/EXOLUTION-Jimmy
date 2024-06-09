@@ -2,26 +2,22 @@ import mongoose from "mongoose";
 
 const personSchema = mongoose.Schema(
 	{
-		fullName: {
+		userId: {
 			type: String,
 			required: true,
 		},
-		balance: {
-			type: Number,
-			required: true,
-		},
-		email: {
+		paymentMethod: {
 			type: String,
 			required: true,
 		},
-		account: {
-			type: Number,
+		description: {
+			type: String,
 			required: true,
 		},
-		password: {
+		category: {
 			type: String,
+			required: true,
 		},
-		history: [], // ref ID instead of data
 	},
 	{
 		timestamps: true,

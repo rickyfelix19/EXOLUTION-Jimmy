@@ -1,11 +1,13 @@
 // 2. Code to display certain Fibonacci number.
-function fibonacciNumber() {
-	let a, b, show; // intialize number
-	for (let i = 1; i <= number; i++) {
-		console.log(n1);
-		nextTerm = n1 + n2; // add number
-		n1 = n2; // change initial number
-		n2 = show;
+function fibonacciLooping(n) {
+	let fib = [1, 1];
+	for (let i = 2; i < n; i++) {
+		fib.push(fib[i - 1] + fib[i - 2]);
 	}
-	console.log();
+	return fib;
 }
+
+// Example usage
+let n = 6;
+let fibNumbersLooping = fibonacciLooping(n);
+console.log(fibNumbersLooping.join(" ")); // Output: 1 1 2 3 5 8

@@ -1,0 +1,20 @@
+{
+	"name": "0.-data-stuctures",
+	"version": "1.0.0",
+	"description": "1. Code to display a pyramid of certain height.\r    E.g.\r    Enter height: 5\r    Output:",
+	"main": "1-pyramid.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node index.js",
+		"dev1": "nodemon 1-pyramid.js",
+		"dev2": "nodemon 2-fibonacci.js",
+		"dev3": "nodemon 3-palindromeAnagram.js",
+		"dev4": "nodemon 4-romanNumber.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.19.2",
+		"nodemon": "^3.1.3"
+	}
+}
